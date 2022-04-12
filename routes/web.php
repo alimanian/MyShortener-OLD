@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('login'));
 });
+
+Route::namespace('\App\Http\Livewire\Auth')->middleware('guest')->group(function (){
+    Route::get('login', Login::class)->name('login');
+    Route::get('register', Register::class)->name('register');
+    Route::get('forget', Forget::class)->name('forget');
+});
+
+Route::get('dashboard', fn() => 'dashboard page')->middleware(['auth']);
