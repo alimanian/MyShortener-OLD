@@ -4,6 +4,7 @@ namespace App\Notifications\Channels;
 
 use Exception;
 use Illuminate\Notifications\Notification;
+use Kavenegar;
 
 class KavenegarChannel
 {
