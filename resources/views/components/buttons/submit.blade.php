@@ -4,7 +4,8 @@
     'class' => 'form-button',
     'wire:target' => $attributes->get('form'),
     'wire:loading.class' => 'loading',
-    'type' => $type
+    'type' => $type,
+    'wire:loading.attr' => 'disabled'
     ]) }}>
         <section wire:loading.remove>
             {!! $slot !!}
