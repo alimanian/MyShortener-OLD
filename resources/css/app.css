@@ -57,6 +57,9 @@
     a{
         @apply text-primary-400;
     }
+    a > svg.icon{
+        @apply transition-all hover:stroke-primary-400;
+    }
     #livewire-error{
         @apply inset-0;
     }

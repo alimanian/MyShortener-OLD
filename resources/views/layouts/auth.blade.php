@@ -15,7 +15,7 @@
         <section class="flex flex-row justify-between items-center px-4 py-5 mb-12 sm:mb-6">
             <svg class="icon"><use xlink:href="#home"/></svg>
             <svg class="fill-indigo-500"><use xlink:href="#logo"/></svg>
-            <svg class="icon scale-x-[-1]"><use xlink:href="#login"/></svg>
+            @yield('second-icon')
         </section>
     </header>
     {!! $slot !!}
