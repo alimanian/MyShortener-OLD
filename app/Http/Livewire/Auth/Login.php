@@ -31,7 +31,6 @@ class Login extends Component
      */
     public function signin()
     {
-        sleep(10);
         $this->validate($this->userRulesForLogin($this->prefix));
 
         try {
