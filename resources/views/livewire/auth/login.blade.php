@@ -10,7 +10,7 @@
                  class="flex flex-col items-center mb-3" />
     </header>
     <main class="flex-1 flex items-center">
-        <x-form id="loginForm" wire:submit.prevent="login" class="w-full">
+        <x-form wire:submit.prevent="signin" class="w-full">
             <x-input class="ltr text-left" :name="$prefix.'phone_number'" type="tel" maxlength="11" autofocus>
                 {{ __('label.phone_number') }}
             </x-input>
@@ -26,7 +26,7 @@
         </x-form>
     </main>
     <footer class="flex-none">
-        <x-button class="form-button-primary !mb-4" type="submit" form="loginForm">
+        <x-button class="form-button-primary !mb-4" type="submit" form="signin">
             {{ __('button.Login') }}
         </x-button>
     </footer>

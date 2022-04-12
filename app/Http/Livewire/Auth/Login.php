@@ -29,8 +29,9 @@ class Login extends Component
     /**
      * @throws ValidationException
      */
-    public function login()
+    public function signin()
     {
+        sleep(10);
         $this->validate($this->userRulesForLogin($this->prefix));
 
         try {

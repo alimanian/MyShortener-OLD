@@ -33,7 +33,7 @@ class Register extends Component
         return view($view)->layout('layouts.auth');
     }
 
-    public function register()
+    public function signup()
     {
         $this->validate($this->userRulesForRegister($this->prefix));
 

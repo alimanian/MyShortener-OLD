@@ -10,7 +10,7 @@
                  class="flex flex-col items-center mb-3" />
     </header>
     <main class="flex-1 flex items-center">
-        <x-form wire:submit.prevent="register" class="w-full">
+        <x-form wire:submit.prevent="signup" class="w-full">
             <section class="flex flex-col sm:flex-row sm:space-x-reverse sm:space-x-3">
                 <x-input :name="$prefix.'first_name'" type="text" maxlength="40" autofocus>
                     {{ __('label.first_name') }}
@@ -31,7 +31,7 @@
         </x-form>
     </main>
     <footer class="flex-none">
-        <x-button class="form-button-primary !mb-4" type="submit" form="register">
+        <x-button class="form-button-primary !mb-4" type="submit" form="signup">
             {{ __('button.Send verification code') }}
         </x-button>
     </footer>
